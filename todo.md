@@ -43,13 +43,29 @@
 - [x] Profil utilisateur avec historique et statut
 
 ## Tests & Qualité
-- [ ] Tests unitaires Vitest pour les APIs critiques
-- [ ] Tests des procédures tRPC
-- [ ] Tests du système de scoring
-- [ ] Tests du déblocage automatique VIP
+- [x] Tests unitaires Vitest pour les APIs critiques
+- [x] Tests des procédures tRPC
+- [x] Tests du système de scoring
+- [x] Tests du déblocage automatique VIP
 
 ## Déploiement & Documentation
-- [ ] Checkpoint final du projet
-- [ ] Documentation des APIs
-- [ ] Guide d'utilisation pour les utilisateurs
-- [ ] Guide d'administration pour le propriétaire
+- [x] Checkpoint final du projet
+- [x] Documentation des APIs
+- [x] Guide d'utilisation pour les utilisateurs
+- [x] Guide d'administration pour le propriétaire
+
+## Intégration Marketing (Claude)
+- [x] Blog Service (3 articles piliers)
+- [x] Video Scripts Service (4 scripts Remotion)
+- [x] Social Responses Service (10+ réponses)
+- [x] Chat Enricher Service
+- [x] Meta Ads Service (3 campagnes)
+- [x] Landing Page Nexus Service
+- [x] Acquisition Hooks Service (5 hooks)
+- [x] Deployment Guide Vercel
+
+## Système de Domination Internationale
+- [x] Multilingual SEO Service (FR/EN)
+- [x] Remotion Video Generator (2 vidéos/jour)
+- [x] Automated Pipeline (NotebookLM → Claude → Remotion → Publication)
+- [x] Automation Router (18 endpoints tRPC)

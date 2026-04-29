@@ -1,6 +1,6 @@
 // Automation Router - tRPC procedures for SEO, Video Generation, and Pipeline
 
-import { router, publicProcedure, protectedProcedure } from "./_core/trpc";
+import { router, publicProcedure, protectedProcedure } from "../_core/trpc";
 import { z } from "zod";
 import { MultilingualSeoService } from "../services/multilingualSeoService";
 import { RemotionVideoGenerator, VideoScript } from "../services/remotionVideoGenerator";
@@ -17,10 +17,10 @@ export const automationRouter = router({
       .input(
         z.object({
           slug: z.string(),
-          title: z.record(z.string()),
-          description: z.record(z.string()),
-          keywords: z.record(z.array(z.string())),
-          content: z.record(z.string()),
+          title: z.record(z.string(), z.string()),
+          description: z.record(z.string(), z.string()),
+          keywords: z.record(z.string(), z.array(z.string())),
+          content: z.record(z.string(), z.string()),
           language: z.enum(["fr", "en"]),
           baseUrl: z.string(),
         })
@@ -45,10 +45,10 @@ export const automationRouter = router({
       .input(
         z.object({
           slug: z.string(),
-          title: z.record(z.string()),
-          description: z.record(z.string()),
-          keywords: z.record(z.array(z.string())),
-          content: z.record(z.string()),
+          title: z.record(z.string(), z.string()),
+          description: z.record(z.string(), z.string()),
+          keywords: z.record(z.string(), z.array(z.string())),
+          content: z.record(z.string(), z.string()),
           language: z.enum(["fr", "en"]),
           baseUrl: z.string(),
         })
@@ -76,10 +76,10 @@ export const automationRouter = router({
           pages: z.array(
             z.object({
               slug: z.string(),
-              title: z.record(z.string()),
-              description: z.record(z.string()),
-              keywords: z.record(z.array(z.string())),
-              content: z.record(z.string()),
+              title: z.record(z.string(), z.string()),
+              description: z.record(z.string(), z.string()),
+              keywords: z.record(z.string(), z.array(z.string())),
+              content: z.record(z.string(), z.string()),
             })
           ),
           baseUrl: z.string(),
@@ -109,10 +109,10 @@ export const automationRouter = router({
       .input(
         z.object({
           slug: z.string(),
-          title: z.record(z.string()),
-          description: z.record(z.string()),
-          keywords: z.record(z.array(z.string())),
-          content: z.record(z.string()),
+          title: z.record(z.string(), z.string()),
+          description: z.record(z.string(), z.string()),
+          keywords: z.record(z.string(), z.array(z.string())),
+          content: z.record(z.string(), z.string()),
           language: z.enum(["fr", "en"]),
         })
       )
@@ -136,10 +136,10 @@ export const automationRouter = router({
       .input(
         z.object({
           slug: z.string(),
-          title: z.record(z.string()),
-          description: z.record(z.string()),
-          keywords: z.record(z.array(z.string())),
-          content: z.record(z.string()),
+          title: z.record(z.string(), z.string()),
+          description: z.record(z.string(), z.string()),
+          keywords: z.record(z.string(), z.array(z.string())),
+          content: z.record(z.string(), z.string()),
           language: z.enum(["fr", "en"]),
         })
       )

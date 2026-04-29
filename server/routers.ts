@@ -16,10 +16,12 @@ import {
 import { chatHistory, marketAnalysis, payments } from "../drizzle/schema";
 import { eq } from "drizzle-orm";
 import { contentRouter } from "./routers/content";
+import { automationRouter } from "./routers/automation";
 
 export const appRouter = router({
   system: systemRouter,
   content: contentRouter,
+  automation: automationRouter,
   auth: router({
     me: publicProcedure.query(opts => opts.ctx.user),
     logout: publicProcedure.mutation(({ ctx }) => {
