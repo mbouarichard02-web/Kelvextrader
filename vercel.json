@@ -4,6 +4,7 @@
   "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
   "framework": "vite",
+  "rootDirectory": ".",
   "env": {
     "NODE_ENV": "production"
   },
